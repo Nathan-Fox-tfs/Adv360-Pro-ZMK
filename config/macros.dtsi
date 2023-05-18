@@ -1,3 +1,9 @@
+macro_lessgreater: macro_lessgreater{
+compatible = "zmk,behavior-macro";
+label = "macro_lessgreater";
+#binding-cells = <0>;
+bindings = <&kp LESS_THAN>, <&kp GREATER_THAN>, <&kp LEFT>;
+};
 macro_curly_brackets: macro_curly_brackets{
 compatible = "zmk,behavior-macro";
 label = "macro_curly_brackets";

@@ -45,6 +45,11 @@
   compatible = "zmk,combos";
   
   COMBO(lshift, &kp LSHFT, 30 31)
+  COMBO(lctrl, &kp LCTRL, 29 30)
+  COMBO(lalt, &kp LALT, 31 32)
+  COMBO(rshift, &kp RSHFT, 44 45)
+  COMBO(rctrl, &kp RCTRL, 43 44)
+  COMBO(ralt, &kp RALT, 45 46)
 
   };
 

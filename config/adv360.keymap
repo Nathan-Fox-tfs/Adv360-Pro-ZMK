@@ -25,12 +25,7 @@
     key-positions = <KEYPOS>; \
     layers = <0>; \
   };
-  combos {
-  compatible = "zmk,combos";
-  
-  COMBO(combo_lshift, &kp LSHFT, 41 42 43 44)
 
-};
 / {
   behaviors {
     #include "macros.dtsi"
@@ -44,6 +39,13 @@
         flavor = "tap-preferred";
         bindings = <&kp>, <&kp>;
     };
+  };
+
+  combos {
+  compatible = "zmk,combos";
+  
+  COMBO(lshift, &kp LSHFT, 41 42 43 44)
+
   };
 
     keymap {

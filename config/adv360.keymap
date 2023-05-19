@@ -44,7 +44,7 @@
   combos {
   compatible = "zmk,combos";
   
-  COMBO(lshift, &kp LSHFT, 41 42 43 44)
+  COMBO(lshift, &kp LSHFT, 30 31)
 
   };
 

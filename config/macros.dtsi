@@ -40,18 +40,6 @@ label = "macro_brackets";
 #binding-cells = <0>;
 bindings = <&kp LBKT>, <&kp RBKT>, <&kp LEFT>;
 };
-macro_lshftctrl: macro_lshftctrl{
-compatible = "zmk,behavior-macro";
-label = "macro_lshftctrl";
-#binding-cells = <0>;
-bindings = <&kp LSHFT>, <&kp LCTRL>;
-};
-macro_rshftctrl: macro_rshftctrl{
-compatible = "zmk,behavior-macro";
-label = "macro_rshftctrl";
-#binding-cells = <0>;
-bindings = <&kp RSHFT>, <&kp RCTRL>;
-};
 macro_kinesis: macro_kinesis{
 compatible = "zmk,behavior-macro";
 label = "macro_kinesis";

@@ -51,12 +51,12 @@
   COMBO(rctrl, &kp RCTRL, 43 44)
   COMBO(ralt, &kp RALT, 45 46)
   
-  COMBO(lctrlshift, &macro_lshftctrl, 29 30 31)
-  COMBO(lctrlalt, &kp LCTRL &kp LALT, 29 32)
-  COMBO(lshiftalt, &kp LSHFT &kp LALT, 30 31 32)
-  COMBO(rctrlshift, &macro_rshftctrl, 43 44 45)
-  COMBO(rctrlalt, &kp RCTRL &kp RALT, 43 46)
-  COMBO(rshiftalt, &kp RSHFT &kp RALT, 44 45 46)
+  COMBO(lctrlshift, &kp LS(LCTRL), 29 30 31)
+  COMBO(lctrlalt, &kp LC(LALT), 29 32)
+  COMBO(lshiftalt, &kp LS(LALT), 30 31 32)
+  COMBO(rctrlshift, &kp RS(RCTRL), 43 44 45)
+  COMBO(rctrlalt, &kp RC(RALT), 43 46)
+  COMBO(rshiftalt, &kp RS(RALT), 44 45 46)
 
   };
 

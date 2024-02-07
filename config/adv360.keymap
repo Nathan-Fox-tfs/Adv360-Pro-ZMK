@@ -4,6 +4,14 @@
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/backlight.h>
 
+#define COMBO(NAME, BINDINGS, KEYPOS) \
+  combo_##NAME { \
+    timeout-ms = <20>; \
+    bindings = <BINDINGS>; \
+    key-positions = <KEYPOS>; \
+    layers = <0>; \
+  };
+  
 / {
   behaviors {
     #include "macros.dtsi"
@@ -28,6 +36,25 @@
     };
   };
 
+  combos {
+  compatible = "zmk,combos";
+
+  COMBO(lshift, &kp LSHFT, 30 31)
+  COMBO(lctrl, &kp LCTRL, 29 30)
+  COMBO(lalt, &kp LALT, 31 32)
+  COMBO(rshift, &kp RSHFT, 44 45)
+  COMBO(rctrl, &kp RCTRL, 43 44)
+  COMBO(ralt, &kp RALT, 45 46)
+
+  COMBO(lctrlshift, &kp LS(LCTRL), 29 30 31)
+  COMBO(lctrlalt, &kp LC(LALT), 29 32)
+  COMBO(lshiftalt, &kp LS(LALT), 30 31 32)
+  COMBO(rctrlshift, &kp RS(RCTRL), 43 44 45)
+  COMBO(rctrlalt, &kp RC(RALT), 43 46)
+  COMBO(rshiftalt, &kp RS(RALT), 44 45 46)
+
+  };
+  
     keymap {
         compatible = "zmk,keymap";
 
